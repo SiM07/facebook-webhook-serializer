@@ -1,0 +1,41 @@
+{
+  "object": "page",
+  "entry": [
+    {
+      "id": "162147347713864",
+      "time": 1510930616452,
+      "messaging": [
+        {
+          "sender": {
+            "id": "1495674840531110"
+          },
+          "recipient": {
+            "id": "162147347713864"
+          },
+          "timestamp": 1510930615227,
+          "message": {
+            "mid": "mid.$cAACTePYBfy1l-8DTu1fynuLSrCa5",
+            "seq": 38708,
+            "text": "Ceci est un message basique.",
+            "nlp": {
+              "entities": {
+                "location": [
+                  {
+                    "suggested": true,
+                    "confidence": 0.85208,
+                    "value": "Ceci",
+                    "type": "value",
+                    "_entity": "location",
+                    "_body": "Ceci",
+                    "_start": 0,
+                    "_end": 4
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

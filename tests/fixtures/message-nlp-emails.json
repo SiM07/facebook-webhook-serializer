@@ -1,0 +1,47 @@
+{
+  "object": "page",
+  "entry": [
+    {
+      "id": "162147347713864",
+      "time": 1510930701757,
+      "messaging": [
+        {
+          "sender": {
+            "id": "1495674840531110"
+          },
+          "recipient": {
+            "id": "162147347713864"
+          },
+          "timestamp": 1510930700848,
+          "message": {
+            "mid": "mid.$cAACTePYBfy1l-8IiMFfynzZZcQIB",
+            "seq": 38710,
+            "text": "Message with two email : toto@toto.com & tata@tata.com",
+            "nlp": {
+              "entities": {
+                "email": [
+                  {
+                    "confidence": 0.75095578432413,
+                    "value": "toto@toto.com",
+                    "_entity": "email",
+                    "_body": "toto@toto.com",
+                    "_start": 25,
+                    "_end": 38
+                  },
+                  {
+                    "confidence": 0.99590875518415,
+                    "value": "tata@tata.com",
+                    "_entity": "email",
+                    "_body": "tata@tata.com",
+                    "_start": 41,
+                    "_end": 54
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

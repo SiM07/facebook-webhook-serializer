@@ -1,0 +1,11 @@
+build:
+    environment:
+        php: 7.0.6
+    tests:
+        override:
+            -
+                command: 'vendor/bin/phpunit --coverage-clover=webhook'
+                coverage:
+                    file: 'webhook'
+                    format: 'clover'
+

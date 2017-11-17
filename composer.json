@@ -1,0 +1,27 @@
+{
+    "name": "sim07/facebook-webhook-serializer",
+    "description": "This library simplify deserialization of Facebook webhook content request.",
+    "keywords": ["webhook", "facebook", "serializer"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Simon Rolland",
+            "email": "contact@simonrolland.fr"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
+    },
+    "require": {
+        "symfony/serializer": "^3.3|^4.0",
+        "symfony/property-access": "^3.3|^4.0",
+        "symfony/property-info": "^3.3|^4.0",
+        "phpdocumentor/reflection-docblock": " ^3.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.4"
+    }
+}

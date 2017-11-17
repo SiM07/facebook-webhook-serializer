@@ -1,0 +1,19 @@
+{
+  "entry": [
+    {
+      "changes": [
+        {
+          "field": "feed",
+          "value": {
+            "item": "like",
+            "verb": "add",
+            "sender_id": "10155839246233518"
+          }
+        }
+      ],
+      "id": "162147347713864",
+      "time": 1510930967
+    }
+  ],
+  "object": "page"
+}
