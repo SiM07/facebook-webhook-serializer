@@ -200,7 +200,7 @@ class WebhookSerializerTest extends TestCase
 
         $value = $change->getValue();
         $this->assertSame('like', $value->getItem());
-        $this->assertSame('verb', $value->getVerb());
+        $this->assertSame('add', $value->getVerb());
         $this->assertSame('10155839246233518', $value->getSenderId());
     }
 
