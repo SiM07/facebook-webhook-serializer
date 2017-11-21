@@ -9,6 +9,7 @@ use SiM07\Entity\Webhook\Entry\Change;
 use SiM07\Entity\Webhook\Entry\Change\Value;
 use SiM07\Entity\Webhook\Entry\Messaging;
 use SiM07\Entity\Webhook\Entry\Messaging\Message;
+use SiM07\Entity\Webhook\Entry\Messaging\Message\QuickReply;
 use SiM07\Entity\Webhook\Entry\Messaging\Message\Nlp;
 use SiM07\Entity\Webhook\Entry\Messaging\Message\Nlp\Entities;
 use SiM07\Entity\Webhook\Entry\Messaging\Message\Nlp\Entities\Email;
@@ -177,7 +178,19 @@ class WebhookSerializerTest extends TestCase
         $this->assertEquals(['value' => '2017-11-21T00:00:00.000+01:00', 'grain' => 'day'], $datetime->getTo());
     }
 
-    public function testNewLikePage()
+    public function testDeserializeQuickReplyMessage()
+    {
+        $webhook = $this->getWebhook('message-quickreply');
+
+        /** @var Message $message */
+        $message = $webhook->getEntry()[0]->getMessaging()[0]->getMessage();
+
+        $this->assertInstanceOf(Message::class, $message);
+        $this->assertInstanceOf(QuickReply::class, $message->getQuickReply());
+        $this->assertSame('SAV', $message->getQuickReply()->getPayload());
+    }
+
+    public function testDeserializeNewLikePage()
     {
         $webhook = $this->getWebhook('page-new-like');
 
