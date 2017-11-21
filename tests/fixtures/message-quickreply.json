@@ -1,0 +1,44 @@
+{
+  "object": "page",
+  "entry": [
+    {
+      "id": "162147347713864",
+      "time": 1510435231750,
+      "messaging": [
+        {
+          "sender": {
+            "id": "1495674840531110"
+          },
+          "recipient": {
+            "id": "162147347713864"
+          },
+          "timestamp": 1510435230240,
+          "message": {
+            "quick_reply": {
+              "payload": "SAV"
+            },
+            "mid": "mid.$cAACTePYBfy1l3jnaIFfrPSR3OBPb",
+            "seq": 38221,
+            "text": "SAV",
+            "nlp": {
+              "entities": {
+                "location": [
+                  {
+                    "suggested": true,
+                    "confidence": 0.93808,
+                    "value": "SAV",
+                    "type": "value",
+                    "_entity": "location",
+                    "_body": "SAV",
+                    "_start": 0,
+                    "_end": 3
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
